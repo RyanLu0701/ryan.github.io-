@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShuRongLu</title>
+    <link rel="stylesheet" href="type.css">
+    <link rel="stylesheet" href="mediaqureies.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div>
+            <div class="scroll-down">
+                <a href="#" class="scroll-down-link" onclick="scrollToNextSection()">
+                    <span class="scroll-down-arrow"></span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#About">About</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#About" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section_text">
+            <p class="section_text_p1">Hello,I'm</p>
+            <h1 class="title title-2">ShuRong Lu</h1>
+            <p class="section_text_p2">AI engineer</p>
+
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('doc/shu_rong_lu_resume.pdf')">Download cv</button>
+                <button class="btn btn-color-1" onclick="location.href='#Contact'">Contact me</button>
+            </div>
+
+            <div id="Social-container">
+                <img src="image/linkedinLogo.png" alt="My linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/shu-rong-lu/'">
+                <img src="image/githublogo.png" alt="My githubs Profile" class="icon" onclick="location.href='https://github.com/RyanLu0701'">
+            </div>
+        </div>
+    </section>
+
+    <section id="About">
+        <p class="section_text_p1">Get To Know More</p>
+        <h2 class="title">About me</h2>
+        <div class="content">
+            <div class="image">
+                <img src="image/F1FA118C-4582-4C21-8815-B52F367B8AA4.jpg" class="self-image" alt="Self Image">
+            </div>
+            <div class="text-container">
+                <p>Having background knowledge in industrial engineering, applying statistics, handling operational research optimization problems, as well as four years of experience in machine learning programming projects and five years of data analysis experience, proficient in big data analysis, computer vision, natural language processing, time series, etc., with a keen interest in model development and deployment.</p>
+            </div>
+        </div>
+        <div id="Education">
+                <div class="Education">
+                    <h2 class="title edu">Education</h2>
+                    <div class="degree">
+                        <div class="Same_line">
+                            <h3>Yang Ming Chaio Tung University (NYCU)</h3>
+                            <p class="date">SEP. 2021 - JUL. 2023</p>
+                        </div>
+                        <div class="details">
+                            <p>Master of Science in Industrial Engineer and Engineer Management</p>
+                        </div>
+                        <p class="location">Hsinchu, Taiwan</p>
+                    </div>
+                    <div class="degree">
+                        <div class="Same_line">
+                            <h3>Yuan Ze University (YZU)</h3>
+                            <p class="date">SEP. 2017 - JUL. 2021</p>
+                        </div>
+                        <div class="details">
+                            <p>Bachelor of Science in Industrial Engineer and Engineer Management</p>
+                        </div>
+                        <p class="location">Taoyuan, Taiwan</p>
+                    </div>
+                </div>
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <p class="section_text_p1">My recent</p>
+        <h1 class="title pj-title">Projects</h1>
+        <div class="project-container">
+            <img src="image/achievement_img1.webp" alt="Project Image" class="project-image">
+            <div class="project-content">
+                <h2 class="project-title">Predicting Wafer Material Removal Rate for Semiconductor Chemical Mechanical Polishing Using a Fusion Network</h2>
+                <div class="project-description">
+                    <ul>
+                        <li>Proposed a model named "Fusion Network" to predict Wafer Material Removal Rate (MRR) for semiconductor quality control</li>
+                        <li>The model outperformed others by 5.84% in MSE and 4.25% in MAE</li>
+                        <li>Published in Applied Science:"Predicting the Wafer Material Removal Rate for Semiconductor Chemical Mechanical Polishing Using a Fusion Network."</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <img src="image/achievement_img_1713931002808.webp" alt="Project Image" class="project-image">
+            <div class="project-content">
+                <h2 class="project-title">Solar Power Generation Forecasting</h2>
+                
+                <div class="project-description">
+                    <p>Collaborated with the National Renewable Energy Certification Center to identify factors influencing solar panel power generation.</p>
+                    <ul>
+                        <li>Utilized web scraping to collect historical weather and air pollution data, and performed data cleaning and integration</li>
+                        <li>Used XGBoost for prediction and SHAP for feature visualization to uncover hidden patterns</li>
+                        <li>Published at the 2023 International Conference on Management Science and Industrial Engineering (MSIE)</li>
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <img src="image/solar.jpg" alt="Project Image" class="project-image">
+            <div class="project-content">
+                <h2 class="project-title">Full-Sky Image Solar Power Forecasting</h2>
+                <div class="project-description">
+                    <ul>
+                        <p>This project was a collaboration with the National Renewable Energy Certification Center to develop a short-term power generation prediction model.</p>
+                        <li>Preprocessing: Cloud cover detection, sun position detection
+                        </li>
+                        <li>Proposed a Temporal Attention module to enable the model to capture spatial and temporal information
+                        </li>
+                        <li>Utilizing this module, the model achieved an average 15% reduction in MSE</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <img src="image/achievement_img_1713933730608.webp" alt="Project Image" class="project-image">
+            <div class="project-content">
+                <h2 class="project-title">Financial Statement Fraud Detection with Hierarchical Attention Networks</h2>
+                <div class="project-description">
+                    <ul>
+                        <p>This project aimed to detect financial statement fraud by analyzing large amounts of public text and data.                        </p>
+                        <li>Using a hierarchical attention network model to extract textual features from the Management Discussion and Analysis (MD&A)
+                            section of annual reports for fraud detection.</li>
+                        <li>Results showed a 10% improvement in accuracy compared to other models</li>
+                        <li>Leveraged the attention mechanism to identify key fraud indicators, enhancing model interpretability.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="sk-details">
+            <div class="skill">Python</div>
+            <div class="skill">R</div>
+            <div class="skill">C++</div>
+            <div class="skill">HTML/CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Pytorch</div>
+            <div class="skill">Scikit-learn</div>
+            <div class="skill">Numpy</div>
+            <div class="skill">Git</div>
+            <div class="skill">Docker</div>
+            <div class="skill">AWS</div>
+            <div class="skill">SQL</div>
+            <div class="skill">C++</div>
+            <div class="skill">Flexsim</div>
+            <div class="skill">Data Analysis</div>
+            <div class="skill">3D Computer Vision</div>
+            <div class="skill">Natural Language Processing</div>
+            <div class="skill">Generative  Model</div>
+            <div class="skill">Distributed Computing</div>
+        </div>
+    </section>
+    <section id="Contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact me</h1>
+        <div class="Contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="image/email.png" alt="Email icon" class="icon Contact-icon">
+                <p><a href="mailto:ShuRongLu0701@gmail.com">ShuRongLu0701@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="image/linkedinLogo.png" alt="Linkedin icon" class="icon Contact-icon">
+                <p><a href="https://www.linkedin.com/in/shu-rong-lu/">Linkedin Profile</a></p>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                <li><a href="#About">About</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <P>Copyright &#169; 2024 ShuRongLu</P>
+    </footer>
+    <script src="func.js"></script>
+</body>
+</html>
